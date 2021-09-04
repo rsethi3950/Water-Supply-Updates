@@ -9,36 +9,42 @@
     <meta name="author" content="Riya" />
     <title>Water Status</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="../static/css/styles.css" rel="stylesheet"/>
+    <link href="../static/css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
 </head>
+
 <body>
 
     <!-- jumbotron -->
-    <div class="jumbotron " style="background-image: url('https://www.uet.co.il/wp-content/uploads/2021/04/home_uet.jpg');background-size: 100% 100%;">
+    <div class="jumbotron "
+        style="background-image: url('https://www.uet.co.il/wp-content/uploads/2021/04/home_uet.jpg');background-size: 100% 100%;">
         <div class="container">
             <h1>Water supply updates</h1>
             <p>Real time status updates...</p>
         </div>
-        
+
     </div>
 
     <!-- main info -->
     <div class="container">
-    
+
         <div class="row">
-            <div class="col-sm-4" >
-                <button type="button" class="btn btn-primary info"><h2><i class="fas fa-check-square"></i> Status</h2></button>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-primary info">
+                    <h2><i class="fas fa-check-square"></i> Status</h2>
+                </button>
             </div>
-            <div >
+            <div>
                 <h3>{{data['status']}}</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <button type="button" class="btn btn-warning info"><h2><i class="fas fa-clock"></i> Time </h2></button>
-                
+                <button type="button" class="btn btn-warning info">
+                    <h2><i class="fas fa-clock"></i> Time </h2>
+                </button>
+
             </div>
             <div>
                 <h3>{{data['time']}}</h3>
@@ -46,8 +52,10 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <button type="button" class="btn btn-success info"><h2><i class="fas fa-faucet"></i> Quality</h2></button>
-                
+                <button type="button" class="btn btn-success info">
+                    <h2><i class="fas fa-faucet"></i> Quality</h2>
+                </button>
+
             </div>
             <div>
                 <h3>{{data['quality']}}</h3>
@@ -55,19 +63,24 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <button type="button" class="btn btn-danger info"><h2><i class="fas fa-info-circle"></i> Reason</h2></button>
-                
+                <button type="button" class="btn btn-danger info">
+                    <h2><i class="fas fa-info-circle"></i> Reason</h2>
+                </button>
+
             </div>
             <div>
                 <h3>{{data['reason']}}</h3>
             </div>
         </div>
-        <div>Last updated at : ...</div>
-        
+
+        <h4><b> Last Updated at : <i></i></b>{{data['lastUpdated']}}</h4>
+
     </div>
 
     <div id="about" class="container" style="margin:20px auto; background-color:lightgray ;padding: 15px 25px;">
-        <h1 style=" color: #d54d7b; font-family: 'Garamond', cursive; font-size: 50px; line-height: 50px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; text-align: center; text-shadow: 0 1px 1px #fff; "><u>FAQS</u></h1>
+        <h1
+            style=" color: #d54d7b; font-family: 'Garamond', cursive; font-size: 50px; line-height: 50px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; text-align: center; text-shadow: 0 1px 1px #fff; ">
+            <u>FAQS</u></h1>
         <p><b>Q. What is General water supply routine ?</b></p>
         <p>It is generally two times a day which is Early morning and Evening for around 2-3 hours each.</p>
         <br>
@@ -75,33 +88,41 @@
         <p>Yes, but it is advisable to filter tap water.</p>
     </div>
 
-    
+
 
     <!-- footer -->
     <div class="footer container" id="layoutAuthentication_footer">
         <footer class="p-10 bg-light ">
             <div class="row">
                 <div class="col-sm-5">
-                    Note that this is not an official government website. The purpose is to update day-to-day water supply information in your Area.
+                    Note that this is not an official government website. The purpose is to update day-to-day water
+                    supply information in your Area.
                     Thank you!
                 </div>
                 <div class="d-flex " style="text-align: center;">
                     <div class="text-muted">Copyright &copy; Water supply Updates 2021</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
                 </div>
-    
+
             </div>
         </footer>
 
-        
+
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
