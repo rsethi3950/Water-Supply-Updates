@@ -25,5 +25,9 @@ def statusForm():
  
         with open("db.json", "w") as outfile:
             outfile.write(json_object)
+        return redirect('/home')
     else:
-        render_template('form.html')
+        return render_template('form.html')
+
+if __name__ == '__main__':
+   app.run(debug=True)

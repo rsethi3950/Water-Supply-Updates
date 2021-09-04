@@ -1,6 +1,6 @@
-dictionary ={
-	"status" : " ",
-	"time" : " ",
-	"quality" : " ",
-	"reason" : " "
+{
+    "status": "Available",
+    "time": "5-8",
+    "quality": "clean",
+    "reason": "                        "
 }
